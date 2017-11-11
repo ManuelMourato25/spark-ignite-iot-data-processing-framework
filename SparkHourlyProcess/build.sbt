@@ -17,6 +17,6 @@ libraryDependencies += "org.apache.ignite" % "ignite-spring" % "2.2.0"
 libraryDependencies += "org.apache.ignite" % "ignite-indexing" % "2.2.0"
 // https://mvnrepository.com/artifact/net.liftweb/lift-webkit_2.10
 libraryDependencies += "net.liftweb" % "lift-webkit_2.10" % "2.6.2"
-
+fork := true
 
 

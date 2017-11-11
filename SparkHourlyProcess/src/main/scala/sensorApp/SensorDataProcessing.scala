@@ -65,7 +65,7 @@ object SensorDataProcessing {
     // and to clean the Ignite cache afterwards so as to avoid over using resources
 
     val hourly_data:IgniteRDD[String,Sensor_Att]=ignitec.fromCache[String,Sensor_Att]("sensorData")
-    hourly_data.sql("select * from Sensor_Att").toJSON.rdd.saveAsTextFile("/home/manuel.mourato/Personal/hourly_data.csv")
+    hourly_data.sql("select * from Sensor_Att").toJSON.rdd.saveAsTextFile("/home/manuelmourato/Personal/hourly_data.csv")
     hourly_data.clear()
     ignitec.close(true)
     sc.stop()
